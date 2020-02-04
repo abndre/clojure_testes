@@ -1,7 +1,10 @@
 (defn bhaskara_raizes
   [a b c delta]
-  (println(/ (- (* -1 b) (Math/sqrt delta)) (* 2 a) ))
-  (print (/ (+ (* -1 b) (Math/sqrt delta)) (* 2 a) ))
+  (def x1 (/ (- (* -1 b) (Math/sqrt delta)) (* 2 a) ) )
+  (def x2 (/ (+ (* -1 b) (Math/sqrt delta)) (* 2 a) ) )
+  (println "delta: " delta  )
+  (println "x1: " x1 )
+  (println "x2: " x2 )
   )
 
 (defn bhaskara
@@ -13,5 +16,5 @@
     
     :else "zero")
 )
-
-(bhaskara 1 4 -5)
+  
+  (bhaskara 1 4 -5)
